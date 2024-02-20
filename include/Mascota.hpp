@@ -1,4 +1,4 @@
-
+#pragma once
 #include <Alimento.hpp>
 class Mascota
 {
