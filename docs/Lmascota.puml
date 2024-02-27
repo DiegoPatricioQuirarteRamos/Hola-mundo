@@ -1,0 +1,81 @@
+@startuml mascota
+class Mascota{
+    - salud : int
+    + Comer()
+    + Beber 
+    + Jugar()
+}
+class Alimento
+class Salud
+class Dueño
+class Juguete
+class Agua
+class Sentimientos
+class Nombre
+class Edad
+class Felicidad
+class Sangre
+class Dientes
+class Ojos
+class Corazon
+class Cama
+class Plato
+class Pelo
+class Casa
+class Casita
+class Correa
+class Placa
+class Genero
+class Familia
+
+
+Dueño "1" *-- "1" Cama
+Dueño "1" *-- "1" Familia
+Dueño "1" *-- "1" Corazon
+Mascota "1" *-- "1" Corazon
+Dueño "1" o-- "1" Corazon
+Mascota "1" o-- "1" Corazon
+Dueño "1" *-- "1" Nombre
+Mascota "1" *-- "1" Genero
+Mascota "1" *-- "1" Pelo
+Mascota "1" *-- "1" Placa
+Mascota "1" o-- "1" Placa
+Dueño "1" *-- "1" Pelo
+Placa "1" *-- "1" Nombre
+Mascota "1" *-- "1" Correa
+Mascota "1" *-- "1" Casita
+Mascota "1" o-- "1" Casita
+Mascota "1" o-- "1" Correa
+Dueño "1" *-- "1" Correa
+Dueño "1" *-- "1" Casa
+Dueño "1" o-- "1"Casa
+Dueño "1" *-- "1" Genero
+Mascota "1" o-- "1" Sangre
+Mascota "1" o-- "*" Dientes
+Mascota "1" *-- "*" Dientes
+Mascota "1" *-- "1" Sangre
+Mascota "1" o-- "2" Ojos
+Mascota "1" *-- "2" Ojos
+Mascota "1" o-- "1" Cama
+Mascota "1" *-- "1" Plato
+Plato "1" *-- "1" Alimento
+Mascota "1" o-- "1" Alimento
+Mascota <|-- Salud
+Mascota "1" o-- "1" Agua
+Mascota <|-- Juguete
+Mascota "1" *-- "1" Edad
+Dueño "1" *-- "2" Ojos
+Dueño "1" *-- "1" Sangre
+Dueño "1" *-- "1" Mascota
+Dueño "1" *-- "1" Nombre
+Mascota "1" *-- "1" Nombre
+Dueño "1" *-- "*" Juguete
+Alimento <|-- Felicidad
+Mascota "1" *-- "1" Sentimientos
+Agua "1" *-- "1" Salud
+Alimento "1" *-- "1" Salud
+Dueño "1" *-- "1" Sentimiento 
+Dueño "1" *-- "1" Edad
+
+
+@enduml
